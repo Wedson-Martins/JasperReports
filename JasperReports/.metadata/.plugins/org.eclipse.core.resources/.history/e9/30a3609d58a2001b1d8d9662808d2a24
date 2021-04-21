@@ -1,0 +1,31 @@
+package com.wcode.JasperReports.model.controller;
+
+import java.io.InputStream;
+
+import javax.activation.DataSource;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import net.sf.jasperreports.engine;
+
+@Controller
+@RequestMapping("/products")
+public class ProductController {
+
+	@Autowired
+	private DataSource dataSource;
+
+	@PostMapping("\report")
+	public void printReport(HttpServletResponse response) {
+
+		InputStream reportStream = this.getClass().getResourceAsStream("/reports/Products.jasper");
+		
+		 JasperReport jasperReport = JRL
+		
+	}
+
+}

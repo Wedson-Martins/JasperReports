@@ -1,0 +1,5 @@
+package com.wcode.JasperReports.model;
+
+public class Product {
+
+}

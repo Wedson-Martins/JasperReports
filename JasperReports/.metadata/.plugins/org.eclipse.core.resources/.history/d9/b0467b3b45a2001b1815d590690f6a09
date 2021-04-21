@@ -1,0 +1,5 @@
+package com.wcode.JasperReports.repository;
+
+public class ProductRepository {
+
+}
