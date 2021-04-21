@@ -1,9 +1,0 @@
-package com.wcode.JasperReports.repository;
-
-import org.springframework.data.repository.PagingAndSortingRepository;
-
-import com.wcode.JasperReports.model.Product;
-
-public interface ProductRepository extends PagingAndSortingRepository<Product, Long> {
-
-}
